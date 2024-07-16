@@ -1,0 +1,442 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 100px 40px;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+#app {
+  width: 100%;
+}
+
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url(./fonts/ProximaNova-Bold.ttf);
+}
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url(./fonts/ProximaNova-Regular.ttf);
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  align-items: end;
+  gap: 28px;
+  padding: 14px 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.logo__airplane {
+  font-size: 24px;
+}
+.logo__title {
+  font-family: ProximaNova-Bold;
+  font-size: 28px;
+}
+.town-date {
+  display: flex;
+  gap: 16px;
+
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+}
+.town-date__town__arrow {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.town-date__calendar {
+  margin-right: 9px;
+}
+
+/*FILTER*/
+.filter {
+  width: 100%;
+  height: 64px;
+
+  display: grid;
+  grid-template-columns: 1fr 160px 190px;
+  gap: 2px;
+
+  margin-top: 108px;
+}
+.filter__airlines {
+  position: relative;
+}
+.filter__airlines select {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  padding: 12px 50px 12px 25px;
+
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #3d3d4b;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.filter__airlines select::-ms-expand {
+  display: none;
+}
+.filter__airlines::after {
+  position: absolute;
+  content: "\e901";
+  top: calc(50% - 12px);
+  right: 25px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: -22px;
+  font-family: "icomoon" !important;
+  color: #293553;
+  border-radius: 12px;
+  background-color: #ededed;
+  pointer-events: none;
+
+  transform: rotate(180deg);
+}
+.filter__airlines__btn {
+  position: absolute;
+}
+.direct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+
+  font-family: ProximaNova-Bold;
+  font-size: 16px;
+  color: #293553;
+
+  background-color: #fff;
+  border-radius: 4px;
+}
+.direct-label {
+  cursor: pointer;
+}
+.filter__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+
+  font-family: ProximaNova-Bold;
+  font-size: 16px;
+  color: #fff;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #293553;
+
+  cursor: pointer;
+}
+
+/*CARD*/
+.ticket {
+  height: 190px;
+  margin-top: 20px;
+  padding: 24px 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 290px;
+
+  background-color: #fff;
+  border-radius: 16px;
+}
+/*INFO*/
+.info {
+  display: flex;
+  gap: 94px;
+}
+.infoLeft {
+  display: flex;
+  flex-direction: column;
+}
+.nameTag {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.company {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.company__name {
+  font-family: ProximaNova-Bold;
+  font-size: 16px;
+  color: #293553;
+}
+.tag {
+  display: flex;
+  gap: 8px;
+
+  height: 32px;
+}
+.tag p {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+}
+.tag__flightNumber {
+  color: #293553;
+  background-color: #ededed;
+}
+.tag__fast {
+  color: #7e78f8;
+  background-color: #ecebfe;
+}
+.tag__recommended {
+  color: #da66dd;
+  background-color: #fee2ff;
+}
+
+.schedule {
+  display: flex;
+  gap: 27px;
+
+  margin-top: 32px;
+}
+.schedule .time {
+  font-family: ProximaNova-Bold;
+  font-size: 28px;
+  color: #293553;
+}
+.schedule .date {
+  margin-top: 8px;
+
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: #293553;
+}
+.travelTime {
+  height: 20px;
+
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.travelTime__tagAirpoty {
+  margin-top: 14px;
+
+  font-family: ProximaNova-Bold;
+  font-size: 14px;
+  color: #293553;
+}
+.travelTime__time {
+  width: 213px;
+
+  padding-bottom: 5px;
+
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: #293553;
+  text-align: center;
+
+  border-bottom: 1px dashed #293553;
+}
+
+/*TARIF*/
+.tarif {
+  margin-top: 58px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tarif p {
+  display: flex;
+  gap: 8px;
+  font-family: ProximaNova-Bold;
+  font-size: 14px;
+  color: #293553;
+}
+
+/*BUY*/
+.buy {
+  position: relative;
+  padding-left: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  align-content: flex-start;
+}
+.buy__btn {
+  padding: 22px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: ProximaNova-Bold;
+  font-size: 16px;
+  color: #fff;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #0f90e9;
+}
+.buy__info {
+  margin-top: 12px;
+
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: #293553;
+}
+.buy__border {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 150px;
+
+  border-right: 1px dashed rgba(41, 53, 83, 30%);
+}
+.buy__circle {
+  position: absolute;
+  width: 44px;
+  height: 24px;
+  background-color: #f5f5f5;
+
+  border-radius: 50%;
+}
+.buy__circleTop {
+  top: -36px;
+  left: -22px;
+}
+.buy__circleBottom {
+  bottom: -36px;
+  left: -22px;
+}
+
+.filterMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: Flex;
+  justify-content: flex-end;
+
+  transform: translateX(100vw);
+  transition: transform 1s;
+}
+.filteMenu_back {
+  position: absolute;
+
+  background-color: rgba(61, 61, 75, 30%);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.filterMenu .block {
+  width: 310px;
+
+  padding: 24px;
+
+  background-color: #293553;
+
+  transform: translateX(400px);
+  transition: transform 1s;
+}
+.block__header {
+  display: flex;
+  justify-content: space-between;
+}
+.block__header__title {
+  margin-bottom: 26px;
+
+  font-family: ProximaNova-Bold;
+  font-size: 20px;
+  color: #fff;
+}
+.block__header__btn {
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.block-label {
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #fff;
+}
+.block__checkbox {
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+}
+.block__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.block__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.block__checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+.activFilter {
+  z-index: 10;
+}
+.activMenu {
+  transform: translateX(0px) !important;
+  transition: transform 0.5s;
+}
+.activMenuBack {
+  opacity: 1;
+  transition: opacity 5s;
+}
