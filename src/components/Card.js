@@ -32,7 +32,7 @@ export default {
             <div class="departure">
               <p class="departure__time time">{{ flight.departure.time }}</p>
               <p class="departure__date date">
-                <span class="icon-calendar town-date__calendar"></span>{{ flight.departure.date }}
+                <span class="icon-Calendar town-date__calendar"></span>{{ flight.departure.date }}
               </p>
             </div>
             <div class="travelTime">
@@ -45,15 +45,15 @@ export default {
             <div class="arrival">
               <p class="arrival__time time">{{ flight.arrival.time }}</p>
               <p class="arrival__date date">
-                <span class="icon-calendar town-date__calendar"></span>{{ flight.arrival.date }}
+                <span class="icon-Calendar town-date__calendar"></span>{{ flight.arrival.date }}
               </p>
             </div>
           </div>
         </div>
         <div class="tarif">
-          <p><span class="icon-portfolio"></span>Ручная кладь: {{ flight.family.luggage }}</p>
-          <p><span class="icon-travel"></span>Багаж: {{ flight.family.baggage }}</p>
-          <p><span class="icon-refresh"></span>Возврат: {{ flight.family.return }}</p>
+          <p><span class="icon-HandLuggage"></span>Ручная кладь: {{ flight.family.luggage }}</p>
+          <p><span class="icon-Baggage"></span>Багаж: {{ flight.family.baggage }}</p>
+          <p><span class="icon-Return"></span>Возврат: {{ flight.family.return }}</p>
         </div>
       </div>
       <div class="buy">

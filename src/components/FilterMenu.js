@@ -8,7 +8,7 @@ export default defineComponent({
   },
   setup(props) {
     const menu = () => {
-      props.toggleActiv(); // Вызов функции обратного вызова для изменения значения activ
+      props.toggleActiv();
     };
 
     return {
@@ -21,7 +21,7 @@ export default defineComponent({
       <div class="block" :class="{activMenu: activ}">
         <div class="block__header">
           <p class="block__header__title">Фильтр</p>
-          <button class="block__header__btn" @click="menu()"><span class="icon-close"></span></button>
+          <button class="block__header__btn" @click="menu()"><span class="icon-X"></span></button>
         </div>
         <input type="checkbox" id="bestPrice" class="block__checkbox">
         <label for="bestPrice" class="block-label">

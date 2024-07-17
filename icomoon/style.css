@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mkg1ni');
-  src:  url('fonts/icomoon.eot?mkg1ni#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mkg1ni') format('truetype'),
-    url('fonts/icomoon.woff?mkg1ni') format('woff'),
-    url('fonts/icomoon.svg?mkg1ni#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gxwnqw');
+  src:  url('fonts/icomoon.eot?gxwnqw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gxwnqw') format('truetype'),
+    url('fonts/icomoon.woff?gxwnqw') format('woff'),
+    url('fonts/icomoon.svg?gxwnqw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,30 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-airplane:before {
-  content: "\e902";
-}
-.icon-arrow-right:before {
+.icon-Airplane:before {
   content: "\e900";
+  color: #293553;
 }
-.icon-cheveron-up:before {
+.icon-ArrowRight:before {
   content: "\e901";
+  color: #293553;
 }
-.icon-close:before {
-  content: "\e906";
+.icon-Baggage:before {
+  content: "\e902";
+  color: #293553;
 }
-.icon-portfolio:before {
+.icon-Calendar:before {
   content: "\e903";
+  color: #293553;
 }
-.icon-refresh:before {
+.icon-Down:before {
   content: "\e904";
+  color: #293553;
 }
-.icon-travel:before {
+.icon-Filter:before {
   content: "\e905";
+  color: #fff;
 }
-.icon-calendar:before {
-  content: "\e953";
+.icon-HandLuggage:before {
+  content: "\e906";
+  color: #293553;
 }
-.icon-equalizer:before {
-  content: "\e992";
+.icon-Return:before {
+  content: "\e907";
+  color: #293553;
+}
+.icon-X:before {
+  content: "\e908";
+  color: #fff;
 }

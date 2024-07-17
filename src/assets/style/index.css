@@ -101,7 +101,7 @@ body {
 }
 .filter__airlines::after {
   position: absolute;
-  content: "\e901";
+  content: "\e904";
   top: calc(50% - 12px);
   right: 25px;
 
@@ -114,12 +114,11 @@ body {
 
   padding-top: -22px;
   font-family: "icomoon" !important;
+  font-size: 5px;
   color: #293553;
   border-radius: 12px;
   background-color: #ededed;
   pointer-events: none;
-
-  transform: rotate(180deg);
 }
 .filter__airlines__btn {
   position: absolute;
@@ -390,6 +389,8 @@ body {
   border: none;
   border-radius: 12px;
   cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 10%);
 }
 .block-label {
   font-family: ProximaNova-Regular;

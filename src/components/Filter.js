@@ -40,7 +40,7 @@ export default {
           Прямые
         </label>
       </div>
-      <button class='filter__btn' @click="toggleActiv()">Фильтр<span class="icon-equalizer"></span></button>
+      <button class='filter__btn' @click="toggleActiv()">Фильтр<span class="icon-Filter"></span></button>
     </div>
     <FilterMenu  :activ="activ" :toggle-activ="toggleActiv"/>
     `,
