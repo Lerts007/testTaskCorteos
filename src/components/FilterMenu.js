@@ -16,9 +16,12 @@ export default defineComponent({
     };
   },
   template: `
-    <div class="filterMenu" :class="{activMenu: activ}">
-      <div class="filteMenu_back" :class="{activMenuBack: activ}"></div>
-      <div class="block" :class="{activMenu: activ}">
+    <div class="filterMenu animate__animated" :class="{animate__slideOutRight: !activ, 'animate__delay-1s': !activ}">
+      <div class="filteMenu_back animate__animated" :class="{animate__fadeIn: activ}"></div>
+      <div 
+        class="block animate__animated" 
+        :class="{animate__slideOutRight: !activ, animate__slideInRight: activ}"
+      >
         <div class="block__header">
           <p class="block__header__title">Фильтр</p>
           <button class="block__header__btn" @click="menu()"><span class="icon-X"></span></button>

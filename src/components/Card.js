@@ -14,7 +14,7 @@ export default {
     },
   },
   template: `
-    <div class="ticket animate__animated animate__backInLeft">
+    <div class="ticket animate__animated animate__backInLeft ">
       <div class="info">
         <div class="infoLeft">
           <div class="nameTag">
